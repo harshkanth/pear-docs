@@ -1,41 +1,112 @@
-# Website
+# Pear Documentation Project
 
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+This project contains a reorganized and structured documentation site for Pear.  
+The goal is to provide a clean, developer-friendly reference with clear navigation, simplified learning paths, and faster onboarding for new users.
+
+## Purpose of this Documentation Site
+
+The original documentation was fragmented and difficult to navigate.  
+This site was created to reorganize the content into a clear, logical structure so developers can quickly find what they need.  
+Information has been separated into sections such as runtime, building blocks, step-by-step guides, tools, troubleshooting, and use cases.  
+This reduces confusion, improves maintainability, and makes the documentation suitable for long-term growth.
+
+---
 
 ## Installation
 
 ```bash
-yarn
+npm install
 ```
-
-## Local Development
+## Run Locally
 
 ```bash
-yarn start
+npm start
 ```
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+This opens the documentation in a local browser with live reload support.
 
-## Build
+### Build 
 
 ```bash
-yarn build
+npm run build
 ```
+A production-ready static site will be created inside the build folder.
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
+---
+## Justification for the Documentation Structure
 
-## Deployment
+The documentation has been reorganized to present information in a clear and task-focused hierarchy. 
+The earlier content was fragmented and difficult to navigate, which increased the effort required for new developers to understand the system. 
+The revised structure separates topics into logical categories that follow a natural learning progression. 
+Introductory material appears first so that users can acquire fundamental understanding before moving on to detailed information about the Pear Runtime, including the command-line interface, the application programming interface, configuration, and troubleshooting. 
+This organization allows developers to locate runtime information without searching through unrelated content.
 
-Using SSH:
+Practical learning is supported by a dedicated Step-by-Step Guide, which allows users to build and test projects in a controlled sequence.
+Technical reference material, including storage, networking, encryption, and core modules, is grouped together so that developers can quickly consult the specific components they are working with. 
+Workflow instructions are placed in a separate How-To section, and tools are documented independently to make focused tasks easier to locate. Real-world use cases demonstrate how Pear operates in different environments, which supports learning through practical examples and encourages best practices.
 
-```bash
-USE_SSH=true yarn deploy
-```
+This structure improves readability, reduces cognitive load, and supports long-term maintenance. 
+Each section now has a defined purpose and follows conventions commonly used in professional developer documentation. 
+The result is a user-centered information architecture that enhances discoverability and strengthens the overall learning experience.
 
-Not using SSH:
+## Documentation Structure
 
-```bash
-GIT_USER=<Your GitHub username> yarn deploy
-```
+- Homepage
+- Introduction to Document
+- Getting Started
 
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+- Pear Runtime
+  - Pear Runtime (Intro)
+  - CLI
+  - API
+  - Application Configuration
+  - Migration
+  - Troubleshooting
+
+- Step-by-Step Guide
+  - Make a Pear App
+  - Start a Desktop Project
+    - Start a Desktop Project
+    - Verification
+    - Reload
+    - Configuration
+
+- Bare Runtime
+  - Overview
+  - API
+  - Compatibility
+  - FAQs
+  - Troubleshooting
+
+- Building Block for Pear
+  - Core
+    - Autobase
+    - Hyperbee
+    - Hypercore
+  - Encryption and Protocol
+    - Compact Encoding
+    - Protomux
+    - Secretstream
+  - Networking
+    - HyperDHT
+    - Hyperswarm
+  - Storage
+    - Corestore
+    - Hyperdrive
+    - Localdrive
+    - Mirrordrive
+
+- How-To
+  - Connect Two Pears
+
+- Tools
+  - Drives
+  - Hyperbeam
+  - Hypershell
+  - Hyperssh
+  - Hypertele
+
+- Use Cases
+  - Bare on Mobile
+  - React App on Desktop
+
