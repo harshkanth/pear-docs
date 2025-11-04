@@ -1,0 +1,91 @@
+/* ===== Base Hero (existing) ===== */
+.pearHero {
+  padding: 80px 20px 48px;
+  text-align: center;
+  background: #ffffff;
+  color: var(--ifm-font-color-base);
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+}
+html[data-theme='dark'] .pearHero {
+  background: linear-gradient(180deg, #0b0e11 0%, #111418 100%);
+  color: #fff;
+}
+
+.pearHeroTitle { font-size: 2.8rem; font-weight: 600; margin-bottom: 12px; }
+.pearHeroSubtitle { max-width: 760px; margin: 0 auto 32px; font-size: 1.15rem; line-height: 1.6; opacity: .9; }
+
+.pearButton {
+  display: inline-block;
+  background: #36b37e;
+  color: #fff;
+  padding: 12px 26px;
+  border-radius: 10px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.pearLinks { margin-top: 18px; opacity: .9; font-weight: 600; }
+.pearLinks a { margin: 0 12px; color: #298dff; text-decoration: none; }
+html[data-theme='dark'] .pearLinks a { color: #83d3ff; }
+
+/* ===== NEW: BIG 2 × 2 CIRCULAR TILES ===== */
+.pearHeroTiles.pearHeroTiles--grid {
+  max-width: 880px;
+  margin: 40px auto 0;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  place-items: center;
+  gap: 24px;
+}
+
+.pearTile.pearTile--large {
+  width: 300px;
+  height: 250px;
+  border-radius: 8px;
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 14px;
+
+  border: 2px solid var(--ifm-color-emphasis-200, #e5e7eb);
+  background: var(--ifm-card-background-color, #fff);
+  box-shadow: 0 8px 24px rgba(0,0,0,.08);
+  text-decoration: none;
+  color: inherit;
+  transition: transform .2s ease, border-color .15s ease, box-shadow .2s ease;
+}
+
+html[data-theme='dark'] .pearTile.pearTile--large {
+  background: rgba(255,255,255,0.07);
+  border-color: rgba(255,255,255,0.16);
+  box-shadow: 0 12px 32px rgba(0,0,0,.35);
+}
+
+.pearTile--featured {
+  border-color: var(--ifm-color-primary, #36b37e);
+}
+
+.pearTile.pearTile--large:hover {
+  transform: translateY(-4px) scale(1.03);
+  box-shadow: 0 10px 30px rgba(0,0,0,.12);
+}
+
+.pearTileIcon { line-height: 1; }
+.pearTileText h3 { font-size: 1.25rem; margin: 6px 0 6px; font-weight: 600; }
+.pearTileText p { font-size: .98rem; opacity: .88; max-width: 80%; margin: 0 auto; }
+
+/* Mobile: stack and shrink circles */
+@media (max-width: 820px) {
+  .pearHeroTiles.pearHeroTiles--grid {
+    grid-template-columns: 1fr;
+    max-width: 460px;
+  }
+
+  .pearTile.pearTile--large {
+    width: 300px;
+    height: 300px;
+  }
+}
