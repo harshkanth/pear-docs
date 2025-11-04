@@ -1,34 +1,35 @@
 ---
 id: installation
 title: Overview
-sidebar_label: Getting started with Pear
+sidebar_label: Getting started with Pear (Updated)
 sidebar_position: 2
 ---
 
 # Getting Started with Pear
 
-This guide explains the basic requirements and steps to install Pear and run your first project locally.
+To get started with Pear, refer to the following section for a seamless onboarding. This guide provides the basic requirements and steps to install Pear.
 
 ## Prerequisites
 
-Before installing Pear, make sure the following are available on your system:
+Before installing Pear, ensure that your system meets the following requirements.
 
-- Node.js 18 or later  
-- A package manager such as **npm** or **yarn**  
-- Git installed (recommended)
+### Supported Operating Systems
+- Windows 10 or later
+- macOS 12 or later
+- Linux (Ubuntu 20.04 or later recommended)
 
-Verify your Node.js version:
-
-```bash
-node -v
-
-```
+### Required Software
+- Node.js (LTS version recommended)
+- npm or yarn
+- Git (optional but recommended for development workflows)
 
 ## Installation
 
-Create a new Pear project
+To install Pear with NPM, perform the following steps:
 
-Run the following command to create a new Pear application:
+1. Create a new Pear project.
+
+2. Run the following command to create a new Pear application:
 
 ```bash
 
@@ -36,4 +37,15 @@ npx create-pear-app my-app
 cd my-app
 
 ```
+
+3. Run the following command to start the development server.
+   
+```bash
+
+pear dev
+
+```
+
+You've successfully onboarded to Pear. 
+
 

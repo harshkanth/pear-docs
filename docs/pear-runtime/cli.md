@@ -1,9 +1,32 @@
 ---
-id: cli
-title: Command-Line_Interface (CLI) for Pear Runtime
-sidebar_label: Command-Line_Interface (CLI)
-sidebar_position: 2
+id: pear-cli
+title: Command Line Interface (CLI)
+sidebar_label: CLI
+sidebar_position: 1
+description: Complete reference for Pear runtime command-line tools used for development, staging, and release workflows.
 ---
+
+# Command Line Interface (CLI)
+
+The Pear Command Line Interface is the primary tool for building, running, and distributing Pear applications.
+
+---
+
+## `pear init [flags] <link or type=desktop> [dir]`
+
+Creates initial project files.
+
+Supported template types:
+
+- desktop  
+- terminal  
+- terminal-node
+
+If no directory is specified, the current folder is used.  
+A template can also be initialized from a Pear link. In that case, the template repository must contain a `_template.json` file that defines prompts and injected variables.
+
+**Flags**
+
 
 # Command-Line-Interface (CLI)
 
