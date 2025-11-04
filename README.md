@@ -1,3 +1,7 @@
+## Live Documentation
+The deployed documentation is available at:
+https://becdeg.com/
+
 # Pear Documentation Project
 
 This project contains a reorganized and structured documentation site for Pear.  
