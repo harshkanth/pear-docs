@@ -37,6 +37,21 @@ npm run build
 A production-ready static site will be created inside the build folder.
 
 ---
+## Documentation Workflow
+
+The workflow is designed to maintain clarity and consistency while allowing the documentation to evolve without disruption. It supports a lightweight authoring experience, continuous improvement, and reliable publishing. By separating writing, review, testing, and deployment, the workflow reduces the risk of broken navigation, formatting errors, and outdated information, which are common issues in SDK environments.
+
+1. Content is created or updated in the docs directory using Markdown. Authors follow the selected style guide and terminology for consistency.
+2. The local development server is used to preview the documentation. This step validates navigation, code formatting, headings, and page layout.
+3. A production build is generated once the content is reviewed and approved.
+4. The static build is deployed to hosting, making the latest version accessible publicly.
+5. Feedback is collected from reviewers and users, and improvements are applied in small revision cycles.
+6. When major changes or releases occur, documentation can be versioned so developers can reference previous states of the SDK.
+
+This workflow allows fast iteration while ensuring clarity, stability, and long-term maintainability. It aligns with accepted standards for modern SDK documentation.
+
+---
+
 ## Justification for the Documentation Structure
 
 The documentation has been reorganized to present information in a clear and task-focused hierarchy. 
@@ -50,12 +65,13 @@ Technical reference material, including storage, networking, encryption, and cor
 Workflow instructions are placed in a separate How-To section, and tools are documented independently to make focused tasks easier to locate. Real-world use cases demonstrate how Pear operates in different environments, which supports learning through practical examples and encourages best practices.
 
 This structure improves readability, reduces cognitive load, and supports long-term maintenance. 
-Each section now has a defined purpose and follows conventions commonly used in professional developer documentation. 
+Each section has a defined purpose and follows conventions commonly used in professional developer documentation. 
 The result is a user-centered information architecture that enhances discoverability and strengthens the overall learning experience.
 
 ## Documentation Structure
 
 - Homepage
+- What's New
 - Introduction to Document
 - Getting Started
 
@@ -79,7 +95,6 @@ The result is a user-centered information architecture that enhances discoverabi
   - Overview
   - API
   - Compatibility
-  - FAQs
   - Troubleshooting
 
 - Building Block for Pear
@@ -113,4 +128,6 @@ The result is a user-centered information architecture that enhances discoverabi
 - Use Cases
   - Bare on Mobile
   - React App on Desktop
+  
+- FAQs
 
